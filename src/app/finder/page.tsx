@@ -2,7 +2,7 @@ const FinderPage = () => {
   return (
     <>
       {/* Main Content */}
-      <main className="flex-grow layout-container flex flex-col max-w-[1440px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
+      <main className="grow layout-container flex flex-col max-w-360 mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
         {/* Page Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
           <div className="flex flex-col gap-2">
@@ -95,9 +95,8 @@ const FinderPage = () => {
                   <label className="flex items-center gap-3 cursor-pointer group/item">
                     <div className="relative flex items-center">
                       <input
-                        defaultChecked
-                        className="peer h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0 transition-all checked:bg-primary checked:border-primary"
                         type="checkbox"
+                        className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                       />
                     </div>
                     <span className="text-sm text-text-muted peer-checked:text-white group-hover/item:text-white transition-colors">
@@ -107,8 +106,8 @@ const FinderPage = () => {
                   <label className="flex items-center gap-3 cursor-pointer group/item">
                     <div className="relative flex items-center">
                       <input
-                        className="peer h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0 transition-all checked:bg-primary checked:border-primary"
                         type="checkbox"
+                        className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                       />
                     </div>
                     <span className="text-sm text-text-muted peer-checked:text-white group-hover/item:text-white transition-colors">
@@ -118,8 +117,8 @@ const FinderPage = () => {
                   <label className="flex items-center gap-3 cursor-pointer group/item">
                     <div className="relative flex items-center">
                       <input
-                        className="peer h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0 transition-all checked:bg-primary checked:border-primary"
                         type="checkbox"
+                        className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                       />
                     </div>
                     <span className="text-sm text-text-muted peer-checked:text-white group-hover/item:text-white transition-colors">
@@ -141,8 +140,8 @@ const FinderPage = () => {
                 <div className="px-4 pb-4 pt-1 flex flex-col gap-2">
                   <label className="flex items-center gap-3 cursor-pointer">
                     <input
-                      className="h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox"
+                      className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                     />
                     <span className="text-sm text-text-muted hover:text-white">
                       1-Step
@@ -150,8 +149,8 @@ const FinderPage = () => {
                   </label>
                   <label className="flex items-center gap-3 cursor-pointer">
                     <input
-                      className="h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox"
+                      className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                     />
                     <span className="text-sm text-text-muted hover:text-white">
                       2-Step
@@ -159,8 +158,8 @@ const FinderPage = () => {
                   </label>
                   <label className="flex items-center gap-3 cursor-pointer">
                     <input
-                      className="h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox"
+                      className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                     />
                     <span className="text-sm text-text-muted hover:text-white">
                       Instant Funding
@@ -181,8 +180,8 @@ const FinderPage = () => {
                 <div className="px-4 pb-4 pt-1 flex flex-col gap-2">
                   <label className="flex items-center gap-3 cursor-pointer">
                     <input
-                      className="h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox"
+                      className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                     />
                     <span className="text-sm text-text-muted hover:text-white">
                       News Trading
@@ -190,8 +189,8 @@ const FinderPage = () => {
                   </label>
                   <label className="flex items-center gap-3 cursor-pointer">
                     <input
-                      className="h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox"
+                      className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                     />
                     <span className="text-sm text-text-muted hover:text-white">
                       Weekend Holding
@@ -199,8 +198,8 @@ const FinderPage = () => {
                   </label>
                   <label className="flex items-center gap-3 cursor-pointer">
                     <input
-                      className="h-4 w-4 rounded border-border-dark bg-background-dark text-primary focus:ring-0 focus:ring-offset-0"
                       type="checkbox"
+                      className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                     />
                     <span className="text-sm text-text-muted hover:text-white">
                       Scalping
@@ -278,7 +277,7 @@ const FinderPage = () => {
                       <div className="size-12 rounded-lg bg-white p-1 overflow-hidden shrink-0 flex items-center justify-center">
                         {/* Replaced with a generic logo visual as requested */}
                         <div
-                          className="w-full h-full bg-gradient-to-tr from-blue-900 to-black rounded flex items-center justify-center text-[10px] font-bold text-white tracking-tighter"
+                          className="w-full h-full bg-linear-to-tr from-blue-900 to-black rounded flex items-center justify-center text-[10px] font-bold text-white tracking-tighter"
                           data-alt="Blue and black gradient logo with generic text"
                         >
                           FTMO
@@ -315,8 +314,8 @@ const FinderPage = () => {
                     <div className="relative pt-1">
                       <label className="flex items-center gap-2 cursor-pointer group/compare">
                         <input
-                          className="h-4 w-4 rounded border-border-dark bg-transparent text-primary focus:ring-0 cursor-pointer"
                           type="checkbox"
+                          className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                         />
                         <span className="text-xs text-text-muted group-hover/compare:text-white transition-colors">
                           Compare
@@ -439,8 +438,8 @@ const FinderPage = () => {
                     <div className="relative pt-1">
                       <label className="flex items-center gap-2 cursor-pointer group/compare">
                         <input
-                          className="h-4 w-4 rounded border-border-dark bg-transparent text-primary focus:ring-0 cursor-pointer"
                           type="checkbox"
+                          className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                         />
                         <span className="text-xs text-text-muted group-hover/compare:text-white transition-colors">
                           Compare
@@ -556,8 +555,8 @@ const FinderPage = () => {
                     <div className="relative pt-1">
                       <label className="flex items-center gap-2 cursor-pointer group/compare">
                         <input
-                          className="h-4 w-4 rounded border-border-dark bg-transparent text-primary focus:ring-0 cursor-pointer"
                           type="checkbox"
+                          className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                         />
                         <span className="text-xs text-text-muted group-hover/compare:text-white transition-colors">
                           Compare
@@ -673,8 +672,8 @@ const FinderPage = () => {
                     <div className="relative pt-1">
                       <label className="flex items-center gap-2 cursor-pointer group/compare">
                         <input
-                          className="h-4 w-4 rounded border-border-dark bg-transparent text-primary focus:ring-0 cursor-pointer"
                           type="checkbox"
+                          className="peer h-4 w-4 appearance-none rounded border border-border-dark bg-background-dark text-primary transition-all checked:bg-primary checked:border-primary checked:after:content-['✓'] checked:after:text-[10px] checked:after:text-background-dark checked:after:flex checked:after:items-center checked:after:justify-center"
                         />
                         <span className="text-xs text-text-muted group-hover/compare:text-white transition-colors">
                           Compare
@@ -764,7 +763,7 @@ const FinderPage = () => {
                 className="size-10 rounded-full border-2 border-surface-dark bg-white overflow-hidden"
                 title="FTMO"
               >
-                <div className="w-full h-full bg-gradient-to-tr from-blue-900 to-black"></div>
+                <div className="w-full h-full bg-linear-to-tr from-blue-900 to-black"></div>
               </div>
               <div className="size-10 rounded-full border-2 border-surface-dark bg-surface-dark flex items-center justify-center text-text-muted text-xs font-medium">
                 +
