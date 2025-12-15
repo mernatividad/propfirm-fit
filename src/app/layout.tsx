@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
@@ -10,9 +11,34 @@ const manrope = Manrope({
 });
 
 
+
 export const metadata: Metadata = {
   title: "PropFirmFit - Premium Prop Firm Finder",
   description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
+  keywords: [
+    "prop firm",
+    "trading",
+    "comparison",
+    "premium",
+    "proprietary trading"
+  ],
+  openGraph: {
+    title: "PropFirmFit - Premium Prop Firm Finder",
+    description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
+    images: ["/og-image.png"],
+    url: "https://propfirmfit.com/",
+    siteName: "PropFirmFit",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PropFirmFit - Premium Prop Firm Finder",
+    description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
+    images: ["/twitter-image.png"]
+  },
+  alternates: {
+    canonical: "https://propfirmfit.com/"
+  },
 };
 
 export const viewport = {
