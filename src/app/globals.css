@@ -13,6 +13,7 @@
   --color-background-dark: #171611;
   --color-surface-dark: #26231c;
   --color-text-muted: #b7b09e;
+  --color-border-dark: #393428;
 
   /* Fonts */
   --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
@@ -46,6 +47,12 @@
 }
 
 /* Custom scrollbar (same as your HTML) */
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
