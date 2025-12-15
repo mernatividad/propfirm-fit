@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="w-full bg-background-dark border-t border-[#383329] pt-16 pb-8">
-      <div className="max-w-[1280px] mx-auto px-4 md:px-10">
+      <div className="max-w-360 mx-auto px-4 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
