@@ -1,7 +1,8 @@
-
+import Header from "@/components/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -10,34 +11,35 @@ const manrope = Manrope({
   display: "swap",
 });
 
-
-
 export const metadata: Metadata = {
   title: "PropFirmFit - Premium Prop Firm Finder",
-  description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
+  description:
+    "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
   keywords: [
     "prop firm",
     "trading",
     "comparison",
     "premium",
-    "proprietary trading"
+    "proprietary trading",
   ],
   openGraph: {
     title: "PropFirmFit - Premium Prop Firm Finder",
-    description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
+    description:
+      "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
     images: ["/og-image.png"],
     url: "https://propfirmfit.com/",
     siteName: "PropFirmFit",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "PropFirmFit - Premium Prop Firm Finder",
-    description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
-    images: ["/twitter-image.png"]
+    description:
+      "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
+    images: ["/twitter-image.png"],
   },
   alternates: {
-    canonical: "https://propfirmfit.com/"
+    canonical: "https://propfirmfit.com/",
   },
 };
 
@@ -46,15 +48,28 @@ export const viewport = {
   initialScale: 1.0,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${manrope.variable} dark`}>
       <head>
         {/* Material Symbols */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className="bg-background-light dark:bg-background-dark text-[#171611] dark:text-white font-display overflow-x-hidden antialiased selection:bg-primary selection:text-white">
-        {children}
+        <div className="relative flex flex-col min-h-screen w-full">
+          <main className="flex-grow flex flex-col items-center w-full">
+            <Header />
+            {children}
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );
