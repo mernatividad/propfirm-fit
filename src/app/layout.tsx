@@ -9,10 +9,15 @@ const manrope = Manrope({
   display: "swap",
 });
 
+
 export const metadata: Metadata = {
   title: "PropFirmFit - Premium Prop Firm Finder",
   description: "Unbiased data on the world's leading proprietary trading firms. Find your edge with our premium comparison tools.",
-  viewport: "width=device-width, initial-scale=1.0",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
