@@ -4,7 +4,7 @@
 /* Make `dark:` work with <html class="dark"> */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Theme tokens (v4 replacement for tailwind.config extend) */
+/* Theme tokens */
 @theme {
   /* Colors */
   --color-primary: #dfa620;
@@ -14,33 +14,38 @@
   --color-surface-dark: #26231c;
   --color-text-muted: #b7b09e;
 
-  /* Font family */
-  --font-display: var(--font-manrope), sans-serif;
+  /* Fonts */
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
 
-  /* Border radius */
+  /* Radius */
   --radius: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-full: 9999px;
 }
 
-/* Optional: sensible defaults to match your HTML body classes */
-html,
-body {
-  height: 100%;
+/* Base defaults */
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
 }
 
-body {
-  font-family: var(--font-display);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-
-  /* selection (your previous Tailwind classes as CSS defaults) */
-  /* If you prefer using the Tailwind classes in layout.tsx, you can remove these. */
-}
-
-/* Custom scrollbar for webkit (same as your HTML) */
+/* Custom scrollbar (same as your HTML) */
 ::-webkit-scrollbar {
   width: 8px;
 }

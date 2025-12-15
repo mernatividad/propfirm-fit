@@ -8,7 +8,7 @@ export default function HomePage() {
             {/* Logo */}
             <a className="flex items-center gap-2 text-white hover:text-primary transition-colors" href="#">
               <div className="size-6 text-primary">
-                <span className="material-symbols-outlined text-2xl">candlestick_chart</span>
+                <span className="material-symbols-outlined text-2xl!">candlestick_chart</span>
               </div>
               <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em]">PropFirmFit</h2>
             </a>
@@ -28,7 +28,7 @@ export default function HomePage() {
             <label className="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
               <div className="flex w-full flex-1 items-stretch rounded-lg h-full bg-[#383329]/50 border border-transparent focus-within:border-primary/50 transition-colors">
                 <div className="text-text-muted flex items-center justify-center pl-3 pr-1">
-                  <span className="material-symbols-outlined text-[20px]">search</span>
+                  <span className="material-symbols-outlined text-[20px]!">search</span>
                 </div>
                 <input className="w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg bg-transparent text-white focus:outline-0 border-none h-full placeholder:text-text-muted px-2 text-sm font-normal leading-normal" placeholder="Search firms..." />
               </div>
@@ -71,7 +71,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-end justify-between mb-8 gap-4">
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <span className="material-symbols-outlined text-primary text-xl">star</span>
+                <span className="material-symbols-outlined text-primary text-xl!">star</span>
                 <span className="text-primary text-sm font-bold tracking-wider uppercase">Premium Selection</span>
               </div>
               <h2 className="text-white text-3xl font-bold leading-tight">Featured Firms</h2>
@@ -102,12 +102,12 @@ export default function HomePage() {
                 <div className="h-px bg-[#383329] w-full my-1"></div>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex items-center gap-1 text-yellow-500">
-                    <span className="material-symbols-outlined text-[18px] fill-1">star</span>
+                    <span className="material-symbols-outlined text-[18px]! fill-1">star</span>
                     <span className="text-white text-sm font-bold">4.8</span>
                     <span className="text-text-muted text-xs ml-1">(2k+ Reviews)</span>
                   </div>
                   <button className="flex items-center gap-1 text-sm font-bold text-white group-hover:text-primary transition-colors">
-                    Visit Site <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    Visit Site <span className="material-symbols-outlined text-[18px]!">arrow_forward</span>
                   </button>
                 </div>
               </div>
@@ -133,12 +133,12 @@ export default function HomePage() {
                 <div className="h-px bg-[#383329] w-full my-1"></div>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex items-center gap-1 text-yellow-500">
-                    <span className="material-symbols-outlined text-[18px] fill-1">star</span>
+                    <span className="material-symbols-outlined text-[18px]! fill-1">star</span>
                     <span className="text-white text-sm font-bold">4.9</span>
                     <span className="text-text-muted text-xs ml-1">(5k+ Reviews)</span>
                   </div>
                   <button className="flex items-center gap-1 text-sm font-bold text-white group-hover:text-primary transition-colors">
-                    Visit Site <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    Visit Site <span className="material-symbols-outlined text-[18px]!">arrow_forward</span>
                   </button>
                 </div>
               </div>
@@ -164,12 +164,12 @@ export default function HomePage() {
                 <div className="h-px bg-[#383329] w-full my-1"></div>
                 <div className="flex justify-between items-center mt-auto">
                   <div className="flex items-center gap-1 text-yellow-500">
-                    <span className="material-symbols-outlined text-[18px] fill-1">star</span>
+                    <span className="material-symbols-outlined text-[18px]! fill-1">star</span>
                     <span className="text-white text-sm font-bold">4.7</span>
                     <span className="text-text-muted text-xs ml-1">(1k+ Reviews)</span>
                   </div>
                   <button className="flex items-center gap-1 text-sm font-bold text-white group-hover:text-primary transition-colors">
-                    Visit Site <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    Visit Site <span className="material-symbols-outlined text-[18px]!">arrow_forward</span>
                   </button>
                 </div>
               </div>
@@ -187,7 +187,7 @@ export default function HomePage() {
               {/* Step 1 */}
               <div className="flex flex-col items-center text-center gap-4">
                 <div className="size-16 rounded-full bg-[#26231c] border border-primary/20 flex items-center justify-center mb-2">
-                  <span className="material-symbols-outlined text-primary text-3xl">manage_search</span>
+                  <span className="material-symbols-outlined text-primary text-3xl!">manage_search</span>
                 </div>
                 <h3 className="text-white text-xl font-bold">1. Discover</h3>
                 <p className="text-text-muted text-sm leading-relaxed">
@@ -197,7 +197,7 @@ export default function HomePage() {
               {/* Step 2 */}
               <div className="flex flex-col items-center text-center gap-4">
                 <div className="size-16 rounded-full bg-[#26231c] border border-primary/20 flex items-center justify-center mb-2">
-                  <span className="material-symbols-outlined text-primary text-3xl">compare_arrows</span>
+                  <span className="material-symbols-outlined text-primary text-3xl!">compare_arrows</span>
                 </div>
                 <h3 className="text-white text-xl font-bold">2. Analyze</h3>
                 <p className="text-text-muted text-sm leading-relaxed">
@@ -220,7 +220,7 @@ export default function HomePage() {
         {/* Trust / Methodology */}
         <section className="w-full max-w-[960px] mx-auto px-4 md:px-10 py-24 text-center">
           <div className="flex flex-col items-center gap-6">
-            <span className="material-symbols-outlined text-text-muted text-5xl opacity-50">verified_user</span>
+            <span className="material-symbols-outlined text-text-muted text-5xl! opacity-50">verified_user</span>
             <h2 className="text-white text-3xl md:text-4xl font-bold tracking-tight">Data You Can Trust.</h2>
             <p className="text-text-muted text-lg leading-relaxed max-w-2xl">
               Our methodology tracks 50+ data points per firm. We don&apos;t accept payments for higher rankings. Our database is updated weekly to ensure you have the precision intelligence needed to make professional career decisions.
@@ -245,11 +245,11 @@ export default function HomePage() {
                 </div>
                 <p className="text-text-muted text-sm mb-3 line-clamp-2">&quot;Great dashboard and execution. The spreads on gold are some of the best I&apos;ve seen in the industry.&quot;</p>
                 <div className="flex items-center gap-1 text-yellow-500 text-sm">
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
                 </div>
               </div>
               {/* Review Item 2 */}
@@ -260,11 +260,11 @@ export default function HomePage() {
                 </div>
                 <p className="text-text-muted text-sm mb-3 line-clamp-2">&quot;Very fast payout processing. The customer support team resolved my issue within minutes.&quot;</p>
                 <div className="flex items-center gap-1 text-yellow-500 text-sm">
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px] fill-1">star</span>
-                  <span className="material-symbols-outlined text-[16px]">star_half</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]! fill-1">star</span>
+                  <span className="material-symbols-outlined text-[16px]!">star_half</span>
                 </div>
               </div>
             </div>
@@ -317,7 +317,7 @@ export default function HomePage() {
             {/* Brand */}
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-4">
-                <span className="material-symbols-outlined text-primary text-2xl">candlestick_chart</span>
+                <span className="material-symbols-outlined text-primary text-2xl!">candlestick_chart</span>
                 <span className="text-white text-lg font-bold">PropFirmFit</span>
               </div>
               <p className="text-text-muted text-sm leading-relaxed mb-6">
