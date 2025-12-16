@@ -1,7 +1,24 @@
+"use client";
+import { useState } from "react";
+
 const FinderPage = () => {
+  // Demo state for showing/hiding the compare bar
+  const [showCompareBar, setShowCompareBar] = useState(true);
+
+  // TODO: Implement filter logic, data fetching, and compare bar functionality 
+
   return (
     <>
       {/* Main Content */}
+      {/* Demo toggle button for compare bar (remove in production) */}
+      <div className="fixed top-4 right-4 z-50">
+        <button
+          className="bg-primary text-white px-4 py-2 rounded shadow"
+          onClick={() => setShowCompareBar((v) => !v)}
+        >
+          {showCompareBar ? "Hide" : "Show"} Compare Bar
+        </button>
+      </div>
       <main className="grow layout-container flex flex-col max-w-360 mx-auto w-full px-4 sm:px-6 lg:px-8 py-8">
         {/* Page Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
@@ -754,8 +771,13 @@ const FinderPage = () => {
         </div>
       </main>
       {/* Sticky Compare Bar */}
-      <div className="fixed bottom-0 left-0 w-full z-40 pointer-events-none px-4 pb-4">
-        <div className="max-w-xl mx-auto bg-[#1e1c16] border border-border-dark shadow-2xl rounded-xl p-3 flex items-center justify-between gap-4 pointer-events-auto transform translate-y-24 animate-[slideUp_0.5s_ease-out_forwards]">
+      <div
+        className={`fixed bottom-0 left-0 w-full z-40 pointer-events-none px-4 pb-4 transition-all duration-500 ${
+          showCompareBar ? "" : "translate-y-24 opacity-0 pointer-events-none"
+        }`}
+        style={{ transitionProperty: "transform, opacity" }}
+      >
+        <div className="max-w-xl mx-auto bg-[#1e1c16] border border-border-dark shadow-2xl rounded-xl p-3 flex items-center justify-between gap-4 pointer-events-auto transform animate-[slideUp_0.5s_ease-out_forwards]">
           {/* slideUp keyframes moved to globals.css for server compatibility */}
           <div className="flex items-center gap-3">
             <div className="flex -space-x-3">
